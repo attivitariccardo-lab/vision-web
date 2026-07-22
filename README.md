@@ -30,16 +30,16 @@ python -m http.server 8000
 
 Poi apri <http://localhost:8000>.
 
-## Pubblicazione (GitHub Pages)
+## Pubblicazione
 
-1. Carica questa cartella su un repository GitHub.
-2. Repository → **Settings → Pages** → Source: **Deploy from a branch** → Branch: `main` / cartella `/ (root)`.
-3. Dopo qualche minuto il sito è online su `https://<utente>.github.io/<repo>/`.
+Il sito è pubblicato su **Vercel**: <https://vision-web-xi.vercel.app/>
 
-### Importante dopo la pubblicazione
-Nei meta tag social di `index.html` gli URL `og:image` e `og:url` usano `https://visionweb.it/`
-come dominio di esempio. **Sostituiscili con l'URL reale** (dominio personale o quello di GitHub
-Pages) affinché l'anteprima su WhatsApp/social mostri l'immagine.
+Ogni `git push` sul branch `main` fa ripubblicare il sito automaticamente.
+
+### Se colleghi un dominio personale
+Nei meta tag social di `index.html` (`og:url`, `og:image`, `twitter:image`) e nel `link rel="canonical"`
+è impostato l'URL Vercel. Se in futuro colleghi un dominio tuo (es. visionweb.it), aggiorna questi URL
+col nuovo dominio affinché l'anteprima su WhatsApp/social continui a funzionare.
 
 ## Contatti
 
