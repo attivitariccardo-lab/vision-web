@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A1628">
+  <title>Vision Web — Siti web professionali per la tua attività locale</title>
+  <meta name="description" content="Vision Web realizza siti web statici moderni, veloci e curati per piccole attività locali, artigiani, ristoranti e professionisti. Preventivo gratuito.">
+  <meta name="author" content="Riccardo Cavazzina — Vision Web">
+  <meta name="keywords" content="siti web, sito web, siti web professionali, sito web attività locale, sito web artigiano, sito web ristorante, sito web negozio, sito web professionista">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vision Web">
+  <meta property="og:title" content="Vision Web — Siti web professionali per la tua attività locale">
+  <meta property="og:description" content="Siti web statici moderni, veloci e curati nei dettagli. A partire da 169€, senza complicazioni.">
+  <meta property="og:locale" content="it_IT">
+  <!-- NB: aggiorna questi URL assoluti con il tuo dominio reale al momento della pubblicazione -->
+  <meta property="og:url" content="https://visionweb.it/">
+  <meta property="og:image" content="https://visionweb.it/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vision Web — Siti web professionali per la tua attività locale">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vision Web — Siti web professionali per la tua attività locale">
+  <meta name="twitter:description" content="Siti web statici moderni, veloci e curati nei dettagli. A partire da 169€, senza complicazioni.">
+  <meta name="twitter:image" content="https://visionweb.it/assets/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Vision Web — torna all'inizio">
+        <img class="brand-mark" src="assets/logo.png" alt="Vision Web" width="36" height="36" decoding="async">
+        <span class="brand-name">Vision<span>Web</span></span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navigazione principale">
+        <a href="#chi-e-per">Per chi</a>
+        <a href="#esempi">Esempi</a>
+        <a href="#prezzi">Prezzi</a>
+        <a href="#processo">Come lavoro</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn-primary btn-sm nav-cta" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+        Preventivo gratuito
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#chi-e-per">Per chi</a>
+      <a href="#esempi">Esempi</a>
+      <a href="#prezzi">Prezzi</a>
+      <a href="#processo">Come lavoro</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contatti">Contatti</a>
+      <a class="btn btn-primary" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">Richiedi preventivo</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================================================
+         HERO — cinematic video with smooth-scroll clip-path reveal
+         ============================================================ -->
+    <section class="video-hero" id="videoHero" data-scroll-height="700">
+      <div class="video-hero-inner">
+
+        <!-- Sticky window: scroll-driven image sequence painted on canvas.
+             40 pre-decoded frames → zero video decoder during scroll → fluid
+             on every device. First frame shown as <img> until canvas is ready. -->
+        <div class="video-hero-window" id="videoHeroWindow">
+          <canvas
+            class="video-hero-media"
+            id="videoHeroCanvas"
+            width="1280"
+            height="714"
+            aria-hidden="true"
+          ></canvas>
+          <img
+            class="video-hero-media video-hero-fallback"
+            id="videoHeroMedia"
+            src="assets/frames/frame-000.jpg"
+            alt=""
+            aria-hidden="true"
+            fetchpriority="high"
+            decoding="async"
+          >
+          <div class="video-hero-scrim" aria-hidden="true"></div>
+        </div>
+
+        <!-- Copy overlaid on top (stays crisp regardless of clip) -->
+        <div class="video-hero-copy container">
+          <span class="badge badge-dark">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Siti web statici professionali
+          </span>
+
+          <h1 class="video-hero-title">
+            Siti web professionali per la tua <span class="text-accent-light">attività locale</span>
+          </h1>
+
+          <p class="video-hero-sub">
+            Creo siti web statici moderni, veloci e curati nei dettagli per aiutare aziende e professionisti a presentarsi online e farsi trovare facilmente dai propri clienti.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.94L0 24l6.35-1.66a11.83 11.83 0 0 0 5.68 1.45h.01c6.55 0 11.86-5.3 11.86-11.86 0-3.17-1.23-6.15-3.38-8.45zM12.05 21.8h-.01a9.94 9.94 0 0 1-5.06-1.38l-.36-.21-3.77.99 1-3.67-.24-.38a9.94 9.94 0 0 1-1.52-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.95-9.83 9.95zm5.46-7.42c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.24-.25-.6-.5-.51-.68-.52l-.58-.01c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.18-1.42-.08-.13-.28-.2-.58-.35z"/></svg>
+              Richiedi un preventivo gratuito
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="#esempi">
+              Guarda gli esempi
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          <div class="video-hero-scroll-hint" aria-hidden="true">
+            <span>Scorri per esplorare</span>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE / STRIP  (activity types)
+         ============================================================ -->
+    <section class="strip" aria-label="Attività che aiuto">
+      <div class="strip-track">
+        <span>Artigiani</span><span>·</span>
+        <span>Ristoranti</span><span>·</span>
+        <span>Negozi locali</span><span>·</span>
+        <span>Professionisti</span><span>·</span>
+        <span>Piccole aziende</span><span>·</span>
+        <span>Studi</span><span>·</span>
+        <span>Officine</span><span>·</span>
+        <span>Artigiani</span><span>·</span>
+        <span>Ristoranti</span><span>·</span>
+        <span>Negozi locali</span><span>·</span>
+        <span>Professionisti</span><span>·</span>
+        <span>Piccole aziende</span><span>·</span>
+        <span>Studi</span><span>·</span>
+        <span>Officine</span><span>·</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PER CHI È PENSATO
+         ============================================================ -->
+    <section class="section" id="chi-e-per">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Per chi è pensato</span>
+          <h2>Un sito semplice e professionale per la <span class="text-accent">tua attività</span></h2>
+          <p class="section-sub">Ogni attività locale merita di essere trovata online. Realizzo siti pensati apposta per te, senza complicazioni tecniche.</p>
+        </div>
+
+        <div class="target-grid" data-stagger>
+          <article class="target-card reveal">
+            <div class="target-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Artigiani</h3>
+            <p>Mostra i tuoi lavori, la tua storia e i tuoi contatti in un sito ordinato che rispecchia la cura del tuo mestiere.</p>
+          </article>
+
+          <article class="target-card reveal">
+            <div class="target-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 2v6a4 4 0 0 0 4 4 4 4 0 0 0 4-4V2M12 12v10M6 22h12"/></svg>
+            </div>
+            <h3>Ristoranti</h3>
+            <p>Menù sempre aggiornato, prenotazioni facili e foto che invogliano i clienti a scoprire la tua cucina.</p>
+          </article>
+
+          <article class="target-card reveal">
+            <div class="target-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 9l1-6h16l1 6M4 9h16v11H4zM9 22V13h6v9"/></svg>
+            </div>
+            <h3>Negozi locali</h3>
+            <p>Presenta il tuo negozio, i prodotti che vendi e come raggiungerti, in modo semplice e diretto.</p>
+          </article>
+
+          <article class="target-card reveal">
+            <div class="target-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM9 5h6v2H9V5z"/></svg>
+            </div>
+            <h3>Professionisti</h3>
+            <p>Trasmetti competenza e serietà con un sito curato che presenta chi sei, cosa offri e come contattarti.</p>
+          </article>
+
+          <article class="target-card reveal">
+            <div class="target-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 2l9 4v6c0 5-3.5 9.5-9 10-5.5-.5-9-5-9-10V6l9-4z"/></svg>
+            </div>
+            <h3>Piccole aziende</h3>
+            <p>Racconta i tuoi valori, i servizi e la tua squadra in modo chiaro, per farti scegliere con fiducia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ESEMPI DI SITI WEB
+         ============================================================ -->
+    <section class="section section-alt" id="esempi">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Esempi di siti</span>
+          <h2>Esempi di siti web <span class="text-accent">realizzabili</span></h2>
+          <p class="section-sub">Ecco alcuni esempi dimostrativi per farti vedere cosa posso realizzare. Tutti i nomi e i contenuti sono di fantasia.</p>
+        </div>
+
+        <div class="examples-grid" data-stagger>
+
+          <article class="example reveal" style="--ex-c1:#f97316; --ex-c2:#fb923c;">
+            <div class="example-preview">
+              <img class="example-img" src="assets/examples/ristorante.jpg" alt="Anteprima di un sito web per ristorante — esempio dimostrativo Ristorante Bella Tavola" loading="lazy" decoding="async" width="900" height="562">
+              <div class="example-overlay">
+                <a class="btn btn-white btn-sm" href="#contatti">
+                  Scopri esempio
+                  <svg viewBox="0 0 24 24" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="example-meta">
+              <div>
+                <span class="chip-tag">Esempio dimostrativo</span>
+                <h3>Ristorante Bella Tavola</h3>
+                <p>Menù, prenotazioni, atmosfera e contatti in un sito che invoglia a passare a cena.</p>
+              </div>
+              <span class="ex-cat">Ristorazione</span>
+            </div>
+          </article>
+
+          <article class="example reveal" style="--ex-c1:#0ea5e9; --ex-c2:#38bdf8;">
+            <div class="example-preview">
+              <img class="example-img" src="assets/examples/idraulica.jpg" alt="Anteprima di un sito web per idraulico — esempio dimostrativo Idraulica Express" loading="lazy" decoding="async" width="900" height="900">
+              <div class="example-overlay">
+                <a class="btn btn-white btn-sm" href="#contatti">
+                  Scopri esempio
+                  <svg viewBox="0 0 24 24" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="example-meta">
+              <div>
+                <span class="chip-tag">Esempio dimostrativo</span>
+                <h3>Idraulica Express</h3>
+                <p>Interventi rapidi, zone servite e contatti sempre visibili: chi cerca ti chiama subito.</p>
+              </div>
+              <span class="ex-cat">Servizi</span>
+            </div>
+          </article>
+
+          <article class="example reveal" style="--ex-c1:#6366f1; --ex-c2:#8b5cf6;">
+            <div class="example-preview">
+              <img class="example-img" src="assets/examples/studio.jpg" alt="Anteprima di un sito web per studio professionale — esempio dimostrativo Studio Professionale" loading="lazy" decoding="async" width="900" height="900">
+              <div class="example-overlay">
+                <a class="btn btn-white btn-sm" href="#contatti">
+                  Scopri esempio
+                  <svg viewBox="0 0 24 24" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="example-meta">
+              <div>
+                <span class="chip-tag">Esempio dimostrativo</span>
+                <h3>Studio Professionale</h3>
+                <p>Un sito sobrio ed elegante che trasmette competenza e affidabilità fin dalla prima riga.</p>
+              </div>
+              <span class="ex-cat">Consulenza</span>
+            </div>
+          </article>
+
+          <article class="example reveal" style="--ex-c1:#ef4444; --ex-c2:#f87171;">
+            <div class="example-preview">
+              <img class="example-img" src="assets/examples/officina.jpg" alt="Anteprima di un sito web per officina auto — esempio dimostrativo Officina Auto" loading="lazy" decoding="async" width="900" height="900">
+              <div class="example-overlay">
+                <a class="btn btn-white btn-sm" href="#contatti">
+                  Scopri esempio
+                  <svg viewBox="0 0 24 24" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="example-meta">
+              <div>
+                <span class="chip-tag">Esempio dimostrativo</span>
+                <h3>Officina Auto</h3>
+                <p>Servizi, tempi di intervento e come prenotare: tutto quello che serve al cliente in un colpo d'occhio.</p>
+              </div>
+              <span class="ex-cat">Automotive</span>
+            </div>
+          </article>
+
+          <article class="example reveal" style="--ex-c1:#ec4899; --ex-c2:#f472b6;">
+            <div class="example-preview">
+              <img class="example-img" src="assets/examples/moda.jpg" alt="Anteprima di un sito web per negozio di moda — esempio dimostrativo Negozio Moda" loading="lazy" decoding="async" width="900" height="900">
+              <div class="example-overlay">
+                <a class="btn btn-white btn-sm" href="#contatti">
+                  Scopri esempio
+                  <svg viewBox="0 0 24 24" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="example-meta">
+              <div>
+                <span class="chip-tag">Esempio dimostrativo</span>
+                <h3>Negozio Moda</h3>
+                <p>Vetrina digitale con collezioni, novità e orari del negozio, curata come una boutique.</p>
+              </div>
+              <span class="ex-cat">Retail</span>
+            </div>
+          </article>
+
+          <article class="example reveal" style="--ex-c1:#14b8a6; --ex-c2:#5eead4;">
+            <div class="example-preview">
+              <img class="example-img" src="assets/examples/impresa.jpg" alt="Anteprima di un sito web per impresa edile — esempio dimostrativo Impresa Casa" loading="lazy" decoding="async" width="900" height="900">
+              <div class="example-overlay">
+                <a class="btn btn-white btn-sm" href="#contatti">
+                  Scopri esempio
+                  <svg viewBox="0 0 24 24" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="example-meta">
+              <div>
+                <span class="chip-tag">Esempio dimostrativo</span>
+                <h3>Impresa Casa</h3>
+                <p>Ristrutturazioni, lavori realizzati e richieste di preventivo: il sito che porta clienti reali.</p>
+              </div>
+              <span class="ex-cat">Edilizia</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="examples-note reveal">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 8v4M12 16h.01M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/></svg>
+          Gli esempi mostrati sono progetti dimostrativi. Non fanno riferimento ad aziende reali.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIZI E PREZZI
+         ============================================================ -->
+    <section class="section" id="prezzi">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servizi e prezzi</span>
+          <h2>Soluzioni semplici e <span class="text-accent">trasparenti</span></h2>
+          <p class="section-sub">Nessun costo nascosto. Prezzo chiaro, quello che vedi è quello che paghi.</p>
+        </div>
+
+        <div class="pricing-grid" data-stagger>
+
+          <!-- Main card: Sito web -->
+          <article class="price-card price-card-main reveal">
+            <div class="price-badge">Più richiesto</div>
+
+            <header class="price-head">
+              <div class="price-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 4h20v14H2zM8 22h8M12 18v4"/></svg>
+              </div>
+              <h3>Sito web statico professionale</h3>
+              <p class="price-desc">Un sito moderno e veloce per presentare la tua attività online, con tutte le informazioni che servono ai tuoi clienti per contattarti.</p>
+            </header>
+
+            <div class="price-amount">
+              <span class="price-num">169<span class="price-cur">€</span></span>
+              <span class="price-note">una tantum</span>
+            </div>
+
+            <ul class="price-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Design personalizzato per la tua attività
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Versione ottimizzata per cellulare e tablet
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Sezioni informative pensate su misura
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Modulo contatti diretto
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Collegamenti diretti ai tuoi social
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Struttura ottimizzata per essere trovato
+              </li>
+            </ul>
+
+            <a class="btn btn-primary btn-block" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+              Richiedi il tuo sito
+            </a>
+          </article>
+
+          <!-- Secondary card: Dominio + hosting -->
+          <article class="price-card reveal">
+            <header class="price-head">
+              <div class="price-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+              </div>
+              <h3>Dominio + hosting</h3>
+              <p class="price-desc">Il tuo indirizzo web personalizzato online, sempre raggiungibile ogni giorno dell'anno.</p>
+            </header>
+
+            <div class="price-amount">
+              <span class="price-num">49<span class="price-cur">€</span></span>
+              <span class="price-note">all'anno</span>
+            </div>
+
+            <ul class="price-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Indirizzo web personalizzato
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Sito sempre attivo e raggiungibile
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Connessione sicura protetta
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
+                Rinnovo semplice, senza pensieri
+              </li>
+            </ul>
+
+            <a class="btn btn-ghost btn-block" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+              Chiedi informazioni
+            </a>
+          </article>
+
+        </div>
+
+        <!-- Swipe hint (mobile carousel only) -->
+        <p class="pricing-hint" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 7l-4 5 4 5M16 7l4 5-4 5"/></svg>
+          Scorri per vedere tutte le soluzioni
+        </p>
+
+        <!-- Maintenance row -->
+        <article class="maintenance reveal">
+          <div class="maintenance-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="maintenance-body">
+            <h3>Aggiornamenti e manutenzione</h3>
+            <p>Il prezzo viene definito su misura in base alle tue esigenze, dopo un breve confronto insieme.</p>
+          </div>
+          <a class="btn btn-outline" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+            Parliamone
+          </a>
+        </article>
+
+        <div class="pricing-cta reveal">
+          <h3>Hai un'idea? Vediamola insieme.</h3>
+          <p>Il preventivo è gratuito, senza impegno. Ci si scrive e si parte da lì.</p>
+          <a class="btn btn-primary btn-lg" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+            Parliamo del tuo progetto
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESSO DI LAVORO
+         ============================================================ -->
+    <section class="section section-dark" id="processo">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-light">Come lavoro</span>
+          <h2 class="text-light">Un percorso <span class="text-accent-light">semplice</span>, dall'idea al sito online</h2>
+          <p class="section-sub text-light-muted">Cinque passaggi chiari, senza sorprese. Sai sempre a che punto siamo.</p>
+        </div>
+
+        <ol class="process" data-stagger>
+          <li class="process-step reveal">
+            <div class="process-num">01</div>
+            <h3>Consulenza</h3>
+            <p>Ci sentiamo per capire cosa serve alla tua attività e come possiamo raccontarla al meglio online.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-num">02</div>
+            <h3>Design</h3>
+            <p>Preparo l'anteprima del sito: struttura, colori e stile. Ti mostro tutto prima di iniziare.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-num">03</div>
+            <h3>Realizzazione</h3>
+            <p>Realizzo il sito curando ogni dettaglio, sia sul computer che sul cellulare.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-num">04</div>
+            <h3>Revisione</h3>
+            <p>Ti mostro il risultato. Sistemiamo insieme quello che vuoi modificare, senza fretta.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-num">05</div>
+            <h3>Pubblicazione</h3>
+            <p>Metto online il tuo sito. Da quel momento sei visibile ai tuoi clienti, ovunque si trovino.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CHI SONO
+         ============================================================ -->
+    <section class="section section-alt" id="chi-sono">
+      <div class="container">
+        <div class="about reveal">
+
+          <div class="about-decor" aria-hidden="true">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+              <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#10B981" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="#0A1628" stop-opacity="0.9"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" fill="none" stroke="url(#g1)" stroke-width="1.5"/>
+              <circle cx="60" cy="60" r="34" fill="none" stroke="#0A1628" stroke-width="1" stroke-opacity="0.2"/>
+              <path d="M42 48l18 30 18-30" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+
+          <span class="eyebrow">Chi c'è dietro Vision Web</span>
+          <h2 class="about-title">Sono <span class="text-accent">Riccardo</span>, e aiuto le attività locali a crescere online.</h2>
+
+          <div class="about-text">
+            <p>Ho fondato Vision Web con un'idea semplice: molte piccole attività meritano una presenza online curata, ma si scoraggiano davanti alla complessità e ai costi delle grandi agenzie.</p>
+
+            <p>Il mio obiettivo è togliere di mezzo tutto quello che complica le cose. Ti seguo dall'inizio alla fine, ti spiego ogni passaggio in modo chiaro e realizzo un sito che rispecchia davvero la tua attività — senza tecnicismi, senza sorprese sul preventivo.</p>
+
+            <p>Credo che la fiducia si costruisca con la trasparenza e con il lavoro fatto bene. Per questo lavoro con poche persone alla volta e mi impegno a consegnare qualcosa di cui essere orgoglioso.</p>
+          </div>
+
+          <div class="about-signature">
+            <span class="signature-line" aria-hidden="true"></span>
+            <div>
+              <strong>Riccardo Cavazzina</strong>
+              <span>Titolare — Vision Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Domande frequenti</span>
+          <h2>Le risposte alle <span class="text-accent">domande più comuni</span></h2>
+        </div>
+
+        <div class="faq" data-stagger>
+          <details class="faq-item reveal">
+            <summary>
+              Quanto costa un sito web?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              <p>Il costo del sito web statico professionale è di <strong>169€, una tantum</strong>. È un prezzo chiaro, senza costi nascosti. Se vuoi anche un indirizzo web personalizzato e la messa online, si aggiungono <strong>49€ all'anno</strong> per dominio e hosting.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              Quanto costa il dominio e l'hosting?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              <p>Dominio e hosting personalizzati hanno un costo di <strong>49€ all'anno</strong>. In parole semplici: il dominio è il tuo indirizzo web personale (per esempio la-tua-attività.it), mentre l'hosting è lo spazio che tiene il tuo sito sempre online. Me ne occupo io, tu non devi pensarci.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              In quanto tempo il sito è pronto?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              <p>In genere il sito è pronto in <strong>7-14 giorni lavorativi</strong> dalla nostra prima chiacchierata. Dipende dai contenuti che hai già pronti (testi, foto, logo) e dal numero di revisioni richieste. Ti tengo sempre aggiornato su come procede il lavoro.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              È previsto un costo di manutenzione?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              <p>Il prezzo della manutenzione viene <strong>definito su misura in base alla tua richiesta</strong>. Se vuoi solo il sito online senza modifiche, non c'è nessun costo mensile. Se invece hai bisogno di aggiornamenti frequenti o modifiche periodiche, ne parliamo insieme e definiamo un prezzo chiaro.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              Posso modificare il sito da solo dopo?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              <p>Il sito è realizzato per essere <strong>veloce, sicuro e senza complicazioni</strong>. Per le modifiche mi occupo io: mi scrivi cosa vuoi cambiare e in poco tempo lo aggiorno. In questo modo tu ti concentri sulla tua attività e non devi imparare programmi tecnici.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              Serve qualche competenza tecnica da parte mia?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              <p><strong>Assolutamente no.</strong> Ci penso io a tutto: dalla creazione, alla messa online, fino al mantenerlo attivo. Tu ti concentri sulla tua attività, io mi occupo del sito.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTATTI
+         ============================================================ -->
+    <section class="section section-cta" id="contatti">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-light">Contatti</span>
+          <h2 class="text-light">Parliamo del tuo <span class="text-accent-light">progetto</span></h2>
+          <p class="section-sub text-light-muted">Scrivimi come preferisci. Ti rispondo velocemente, senza formalità.</p>
+        </div>
+
+        <div class="contact-grid" data-stagger>
+
+          <a class="contact-card contact-whatsapp reveal" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.94L0 24l6.35-1.66a11.83 11.83 0 0 0 5.68 1.45h.01c6.55 0 11.86-5.3 11.86-11.86 0-3.17-1.23-6.15-3.38-8.45zM12.05 21.8h-.01a9.94 9.94 0 0 1-5.06-1.38l-.36-.21-3.77.99 1-3.67-.24-.38a9.94 9.94 0 0 1-1.52-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.95-9.83 9.95zm5.46-7.42c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.24-.25-.6-.5-.51-.68-.52l-.58-.01c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.18-1.42-.08-.13-.28-.2-.58-.35z"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">Scrivimi ora</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M8 7h9v9"/></svg>
+            </span>
+          </a>
+
+          <a class="contact-card reveal" href="tel:+393913679150">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.66-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.09 4.18 2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-label">Telefono</span>
+              <span class="contact-value">391 367 9150</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M8 7h9v9"/></svg>
+            </span>
+          </a>
+
+          <a class="contact-card reveal" href="mailto:attivitariccardo@gmail.com">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">attivitariccardo@gmail.com</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M8 7h9v9"/></svg>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <img class="brand-mark" src="assets/logo.png" alt="Vision Web" width="32" height="32" decoding="async">
+            <span class="brand-name">Vision<span>Web</span></span>
+          </a>
+          <p>Siti web statici moderni per chi vuole una presenza online chiara, veloce e senza complicazioni.</p>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Naviga</h4>
+            <a href="#chi-e-per">Per chi</a>
+            <a href="#esempi">Esempi</a>
+            <a href="#prezzi">Prezzi</a>
+            <a href="#processo">Come lavoro</a>
+            <a href="#faq">Domande frequenti</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contatti</h4>
+            <a href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="tel:+393913679150">391 367 9150</a>
+            <a href="mailto:attivitariccardo@gmail.com">attivitariccardo@gmail.com</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Social</h4>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Vision Web — Riccardo Cavazzina. Tutti i diritti riservati.</span>
+        <span class="footer-made">Sito realizzato con cura.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/393913679150" target="_blank" rel="noopener noreferrer" aria-label="Scrivimi su WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.94L0 24l6.35-1.66a11.83 11.83 0 0 0 5.68 1.45h.01c6.55 0 11.86-5.3 11.86-11.86 0-3.17-1.23-6.15-3.38-8.45zM12.05 21.8h-.01a9.94 9.94 0 0 1-5.06-1.38l-.36-.21-3.77.99 1-3.67-.24-.38a9.94 9.94 0 0 1-1.52-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.95-9.83 9.95zm5.46-7.42c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.24-.25-.6-.5-.51-.68-.52l-.58-.01c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.18-1.42-.08-.13-.28-.2-.58-.35z"/></svg>
+    <span class="wa-float-label">Scrivimi su WhatsApp</span>
+  </a>
+
+  <script src="script.js?b=3" defer></script>
+</body>
+</html>

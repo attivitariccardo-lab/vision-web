@@ -1,0 +1,9 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Temp source files (non parte del sito)
+assets/_src.mp4
+assets/_logo_src.*
