@@ -1642,6 +1642,50 @@ p { margin: 0; color: var(--text-muted); }
   .contact-icon { width: 48px; height: 48px; }
 
   .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
+
+  /* --- Hero CTAs: full-width & stacked, thumb-friendly (not side-by-side) --- */
+  .hero-ctas { flex-direction: column; gap: 10px; width: 100%; }
+  .hero-ctas .btn { width: 100%; }
+
+  /* --- "Come lavoro": vertical timeline instead of 5 stacked cards.
+         A mobile-specific layout — numbered nodes on a connecting line. --- */
+  .process { display: block; }
+  .process-step {
+    position: relative;
+    padding: 3px 0 30px 62px;
+    min-height: 44px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .process-step:last-child { padding-bottom: 0; }
+  .process-step::before {          /* line connecting the nodes */
+    content: '';
+    position: absolute;
+    left: 21px; top: 48px; bottom: -2px;
+    width: 2px;
+    background: linear-gradient(rgba(52,211,153,.55), rgba(52,211,153,.10));
+  }
+  .process-step:last-child::before { display: none; }
+  .process-num {                   /* step number as a node on the line */
+    position: absolute;
+    left: 0; top: 0;
+    width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0;
+    font-size: 1.05rem; font-weight: 700;
+    color: var(--green-400);
+    -webkit-text-stroke: 0;
+    border-radius: 50%;
+    background: rgba(16,185,129,.12);
+    border: 1.5px solid rgba(52,211,153,.6);
+  }
+  .process-step h3 { padding-top: 7px; margin-bottom: 6px; }
+
+  /* --- Touch target: footer social icons to 44×44 --- */
+  .footer-social a { width: 44px; height: 44px; }
 }
 
 @media (max-width: 420px) {
