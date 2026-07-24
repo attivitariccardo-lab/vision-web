@@ -1593,29 +1593,39 @@ p { margin: 0; color: var(--text-muted); }
   .video-hero-title { font-size: clamp(2rem, 8vw, 2.8rem); }
   .video-hero-scroll-hint { bottom: 20px; font-size: 0.75rem; padding: 8px 14px; }
 
-  /* Pricing as a swipeable, snap carousel on phones — a real mobile
-     decision, not a stacked shrink. The two cards peek so the swipe
-     affordance is obvious; maintenance + CTA stay stacked below. */
+  /* Pricing carousel on mobile — KEPT, but cards are wider (93% → the
+     checklist text fits on one line, no lateral squeeze) and compact
+     (tight internal spacing → not tall). Still peeks + snaps. */
   .pricing-grid {
     display: grid;
+    grid-template-columns: none;   /* clear the base 1fr so BOTH cards use auto-columns */
     grid-auto-flow: column;
-    grid-auto-columns: 85%;
-    gap: 16px;
+    grid-auto-columns: 93%;
+    gap: 14px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding: 4px 20px 12px;
-    margin: 0 -20px;          /* bleed to screen edges */
+    padding: 4px 20px 10px;
+    margin: 0 -20px;              /* bleed to screen edges */
     scroll-padding-left: 20px;
   }
   .pricing-grid::-webkit-scrollbar { display: none; }
   .pricing-grid > .price-card {
     scroll-snap-align: center;
-    min-height: 0;            /* let content size the card in a row */
+    min-height: 0;               /* content-height, not forced 480px */
   }
-  .price-card { padding: 32px 24px; }
-  .price-num { font-size: 2.8rem; }
+  /* compact card internals → shorter cards */
+  .price-card { padding: 24px 22px; }
+  .price-icon { width: 44px; height: 44px; margin-bottom: 12px; }
+  .price-head { padding-bottom: 14px; margin-bottom: 14px; }
+  .price-head h3 { font-size: 1.2rem; margin-bottom: 6px; }
+  .price-desc { font-size: 0.9rem; line-height: 1.5; }
+  .price-amount { margin-bottom: 14px; }
+  .price-num { font-size: 2.5rem; }
+  .price-list { gap: 10px; margin-bottom: 18px; }
+  .price-list li { font-size: 0.875rem; line-height: 1.35; gap: 9px; }
+  .price-list svg { width: 16px; height: 16px; margin-top: 2px; }
 
   /* Swipe hint under the carousel */
   .pricing-hint {
@@ -1623,7 +1633,7 @@ p { margin: 0; color: var(--text-muted); }
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin-top: 4px;
+    margin-top: 6px;
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-dim);
@@ -1633,6 +1643,11 @@ p { margin: 0; color: var(--text-muted); }
     0%, 100% { transform: translateX(-3px); }
     50%      { transform: translateX(3px); }
   }
+
+  /* Compact the maintenance row + final CTA so the section isn't long */
+  .maintenance { margin-top: 22px; padding: 22px 20px; }
+  .pricing-cta { margin-top: 36px; padding: 32px 20px; }
+  .pricing-cta h3 { font-size: 1.35rem; }
 
   .example-meta { flex-direction: column; }
   .ex-cat { margin-top: 6px; }
